@@ -19,7 +19,7 @@ git init
 git add .
 
 # 提交代码
-git commit -m "deploy: update site"
+git commit -m "fix: update resource paths"
 
 # 推送到 gh-pages 分支
 git push -f git@github.com:xmc1472521772/HousingSystem.git master:gh-pages

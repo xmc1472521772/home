@@ -7,7 +7,7 @@ const repoName = 'HousingSystem';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',
+  base: `/${repoName}/`,
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -18,4 +18,17 @@ export default defineConfig({
     host: true,
     open: true,
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    manifest: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'react-router-dom'],
+          'antd': ['antd', '@ant-design/icons'],
+        }
+      }
+    }
+  }
 }); 
