@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+import { resolve } from 'path';
 
 // 获取仓库名称作为基础路径
 const repoName = 'HousingSystem';
@@ -10,7 +10,7 @@ export default defineConfig({
   base: '/HousingSystem/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': resolve(__dirname, './src'),
     },
   },
   server: {
@@ -23,6 +23,9 @@ export default defineConfig({
     assetsDir: 'assets',
     manifest: true,
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
       output: {
         manualChunks: {
           'vendor': ['react', 'react-dom', 'react-router-dom'],
