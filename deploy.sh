@@ -16,15 +16,15 @@ cd dist
 git init
 
 # 添加所有文件
-git add .
+git add -A
 
 # 提交代码
-git commit -m "fix: update resource paths"
+git commit -m "deploy: update site"
 
 # 推送到 gh-pages 分支
 git push -f git@github.com:xmc1472521772/HousingSystem.git master:gh-pages
 
-cd - 
+cd -
 
 git config --global user.email "1472521772@qq.com"
 git config --global user.name "xmc1472521772" 
