@@ -29,7 +29,7 @@ const HouseListPage: React.FC = () => {
       price: 5000,
       area: 120,
       location: '北京市朝阳区',
-      image: '/images/house1-1.jpg',
+      image: '/HousingSystem/images/house1-1.jpg',
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const HouseListPage: React.FC = () => {
       price: 4500,
       area: 90,
       location: '北京市海淀区',
-      image: '/images/house1-2.jpg',
+      image: '/HousingSystem/images/house1-2.jpg',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const HouseListPage: React.FC = () => {
       price: 3500,
       area: 60,
       location: '北京市西城区',
-      image: '/images/house1-3.jpg',
+      image: '/HousingSystem/images/house1-3.jpg',
     },
   ];
 

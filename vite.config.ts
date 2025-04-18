@@ -7,7 +7,7 @@ const repoName = 'HousingSystem';
 
 export default defineConfig({
   plugins: [react()],
-  base: `/${repoName}/`,
+  base: '/HousingSystem/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -26,7 +26,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor': ['react', 'react-dom', 'react-router-dom'],
-          'antd': ['antd', '@ant-design/icons'],
+          'antd': ['antd', '@ant-design/icons']
         }
       }
     }
