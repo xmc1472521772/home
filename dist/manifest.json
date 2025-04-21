@@ -1,0 +1,27 @@
+{
+  "_antd-49010947.js": {
+    "file": "assets/antd-49010947.js",
+    "imports": [
+      "_vendor-24f44dac.js"
+    ]
+  },
+  "_vendor-24f44dac.js": {
+    "file": "assets/vendor-24f44dac.js"
+  },
+  "index.css": {
+    "file": "assets/index-01efaa79.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "assets/index-01efaa79.css"
+    ],
+    "file": "assets/main-20969a62.js",
+    "imports": [
+      "_vendor-24f44dac.js",
+      "_antd-49010947.js"
+    ],
+    "isEntry": true,
+    "src": "index.html"
+  }
+}
